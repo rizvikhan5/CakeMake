@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- daisi ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawsome -->
+
+    <script src="https://kit.fontawesome.com/012f11edc8.js" crossorigin="anonymous"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .font-robot{     
+                        font-family: "Roboto", sans-serif;
+                       
+                        }
+    </style>
+
+    <link rel="shortcut icon" href="Image/fav.jpg" type="image/x-icon">
+    
+</head>
+<body class="font-robot">
+   <header class="container mx-auto ">
+
+    <!-- naveber start -->
+            <section class="top-fixed">
+                <div class="navbar justify-evenly">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li class="text-lg" ><a href="#home">Home</a></li>
+                            <li class="text-lg" ><a href="#aboutus">About Us</a></li>
+                            <li class="text-lg" ><a href="#servics">Servics</a></li>
+                            <li class="text-lg" ><a href="#clients">Clients</a></li>
+                            <li class="text-lg" ><a href="#faq">FAQ</a></li>
+                            
+                            <li class="text-lg" ><a href="#contact">Contact</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-2xl"><i>Sweet <span class="text-pink-500">Delight</span></i></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li class="text-lg"><a href="#home">Home</a></li>
+                        <li class="text-lg"><a href="#aboutus">About Us</a></li>
+                        <li  class="text-lg"><a href="#servics">Servics</a></li>
+                        <li class="text-lg"><a href="#clients">Clients</a></li>
+                        <li class="text-lg"><a href="#faq">FAQ</a></li>
+                       
+                        <li class="text-lg" ><a href="#contact">Contact</a></li>
+                      </ul>
+                    </div>
+
+                    <label class="swap swap-rotate">
+                        <!-- this hidden checkbox controls the state -->
+                        <input type="checkbox" class="theme-controller " value="valentine" />
+                      
+                        <!-- sun icon -->
+                        <svg
+                          class="swap-off h-10 w-10 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                        </svg>
+                      
+                        <!-- moon icon -->
+                        <svg
+                          class="swap-on h-10 w-10 fill-current"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24">
+                          <path
+                            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                        </svg>
+                      </label>
+
+                    
+                  </div>
+            </section>
+
+            <!-- naveber end -->
+
+            <!-- banner  start-->
+           <section id="home" class="   mt-10 mb-10" >
+            <div class="hero ">
+              <div class="hero-content gap-24 mt-10 flex-col lg:flex-row">
+                <div>
+                  <h1 class="text-6xl font-bold">Welcome You! <br> To Our <br> <i class="text-pink-500">Sweet Delight</i></h1>
+                  <p class="py-6 text-lg font-semibold">
+                    We make Delicious and Healthy cake. <br> You can customize  your own cake for you from us. <br> For order & update stay tuned.
+                    
+                  </p>
+                  <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                  
+                </div>
+                <div> <img
+                  src="Image/ice cream cake-amico.png"
+                  class="max-w-sm " />
+                </div>
+              </div>
+
+
+              
+             
+            </div>
+           </section>
+            <!-- banner end -->
+
+           
+   </header>
+
+   <main  class="container mx-auto ">
+    <!-- about us start -->
+     <section id="aboutus" class="mt-10">
+      <div class="mt-16 text-center">
+        <h1 class=" text-6xl font-bold">About Us</h1>
+        <p class="text-lg font-semibold">We make homemade cake. We ensure fresh, delicious and hygienic homemade cake.</p>
+      </div>
+      
+        
+        <div class="hero-content mt-10 gap-24 flex-col lg:flex-row">
+
+          <div>
+            <img class=" rounded-lg" src="Image/cake shop.gif" alt="">
+          </div>
+
+          <div>
+            <h1 class="text-6xl font-bold">we are dedicated <br> to give you <br> <i class="text-pink-500">our best services</i> </h1>
+            <p class="py-6 text-lg font-semibold">
+             Our team always try to serve you our best. <br> We are professional baker. Must try our products <br> at least one time.
+            </p>
+            <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+            </div>
+          
+        </div>
+      
+  </section>
+     <!-- about us end -->
+
+    <!-- servics start -->
+      <section id="servics" class="mt-10">
+          <div class="mt-16 text-center">
+              <h1 class=" text-6xl font-bold">Our Servics</h1>
+              <p class="text-lg font-semibold">We always gives you our best services. Here are our services which is available</p>
+          </div>
+
+          <div class="mt-10 mb-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- card-1 -->
+            <div class="card bg-base-200  shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="Image/1.jpg"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body ">
+                <h2 class="text-2xl font-bold">Chocolate Cake</h2>
+                <p class="text-lg font-semibold">This is Our Chocolate Cake. You can get it from us.</p>
+                <div class="card-actions ">
+                  <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- card-1-end -->
+
+            <!-- card-2 -->
+            <div class="card bg-base-200 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="Image/2.jpg"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body ">
+                <h2 class="text-2xl font-bold">Vanilla  Cake</h2>
+                <p class="text-lg font-semibold">This is Our Vanilla Cake. You can get it from us.</p>
+                <div class="card-actions ">
+                  <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <!-- card-2-end -->
+
+            <!-- card-3 -->
+            <div class="card bg-base-200  shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="Image/3.jpg"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body ">
+                <h2 class="text-2xl font-bold">Red Velvet Cake</h2>
+                <p class="text-lg font-semibold">This is Our Red Velvet Cake. You can get it from us.</p>
+                <div class="card-actions ">
+                  <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                </div>
+              </div>
+            </div>
+             <!-- card-3-end -->
+
+             <!-- card-4 -->
+             <div class="card bg-base-200 shadow-xl">
+              <figure class="px-10 pt-10">
+                <img
+                  src="Image/4.jpg"
+                  alt="Shoes"
+                  class="rounded-xl md:h-[145px]" />
+              </figure>
+              <div class="card-body ">
+                <h2 class="text-2xl font-bold">Lemon Cake.
+                </h2>
+                <p class="text-lg font-semibold">This is OurLemon Cake. You can get it from us.</p>
+                <div class="card-actions ">
+                  <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                </div>
+              </div>
+            </div>
+              <!-- card-4-end -->
+
+              <!-- card 5 start -->
+              <div class="card bg-base-200 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="Image/delicious-carrot-cake-with-cream.jpg"
+                    alt="Shoes"
+                    class="rounded-xl md:h-[145px]" />
+                </figure>
+                <div class="card-body ">
+                  <h2 class="text-2xl font-bold">Butterscotch cake
+
+                  </h2>
+                  <p class="text-lg font-semibold">This is Butterscotch Cake. You can get it from us.</p>
+                  <div class="card-actions ">
+                    <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card 5 end -->
+
+
+              <!-- card 6 start -->
+              <div class="card bg-base-200 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="Image/cup cake.jpg"
+                    alt="Shoes"
+                    class="rounded-xl md:h-[145px]" />
+                </figure>
+                <div class="card-body ">
+                  <h2 class="text-2xl font-bold">Cup Cake.
+                  </h2>
+                  <p class="text-lg font-semibold">This is Cup Cake. You can get it from us.</p>
+                  <div class="card-actions ">
+                    <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 end -->
+
+              <!-- card 7 start -->
+              <div class="card bg-base-200 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="Image/jars-with-berries.jpg"
+                    alt="Shoes"
+                    class="rounded-xl md:h-[145px]" />
+                </figure>
+                <div class="card-body ">
+                  <h2 class="text-2xl font-bold">Jar Cake.
+                  </h2>
+                  <p class="text-lg font-semibold">This is Jar Cake. You can get it from us.</p>
+                  <div class="card-actions ">
+                    <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+               <!-- card 7 end -->
+
+               <!-- card 8 start -->
+
+               <div class="card bg-base-200 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="Image/Marble-Cake-min.jpg"
+                    alt="Shoes"
+                    class="rounded-xl md:h-[145px]" />
+                </figure>
+                <div class="card-body ">
+                  <h2 class="text-2xl font-bold">Marble Cake.
+                  </h2>
+                  <p class="text-lg font-semibold">This is Marbel Cake. You can get it from us.</p>
+                  <div class="card-actions ">
+                    <a class="btn bg-gradient-to-r from-pink-400 via-gray-400 text-lg rounded-2xl" target="_blank" href="https://www.facebook.com/search/top?q=sweet%20delight">Buy Now</a>
+                  </div>
+                </div>
+              </div>
+
+               <!-- card 8 end -->
+
+
+          </div>
+      </section>
+      <!-- servics end -->
+
+       <!-- ours cake -->
+       <h1 id="clients" class="text-6xl font-bold text-center mt-16">Clients Review</h1>
+       <section class="flex flex-col lg:flex-row gap-24  justify-between m-16">
+        
+        <!--img-->
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 flex-1">
+            <div class="rounded-xl h-36 bg-gradient-to-r from-sky-300 to-fuchsia-300 "></div>
+            <div class="row-span-2 rounded-xl bg-gradient-to-r from-purple-300 to-pink-300 flex justify-center items-center"><img class="p-5 rounded-xl" src="Image/7.png" alt=""></div>
+            <div class="row-span-2 rounded-xl bg-gradient-to-r from-sky-300 to-indigo-300 flex justify-center items-center"><img class="p-5" src="Image/5.png" alt=""></div>
+            <div class="rounded-xl h-36 bg-gradient-to-r from-[#c4b5fd] via-[#a5b4fc]"></div>
+        </div>
+        <!--Info-->
+        <div class="flex-1  grid gap-5 grid-cols-1 md:grid-cols-2">
+            <!-- <h2 class="text-4xl font-bold"> Customised cake</h2>
+            <h1 class="text-3xl font-semibold mt-4">Something cake</h1>
+
+            <p class=" my-5 text-lg font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Illo, voluptates a voluptate nisi at numquam exercitationem officiis, <br> vitae deleniti ipsum suscipit, ab impedit! Nulla porro, <br> sint laborum ea fugiat corporis.</p> -->
+            <div class="rounded-xl h-36 bg-gradient-to-r from-sky-300 to-fuchsia-300 "></div>
+            <div class="row-span-2 rounded-xl bg-gradient-to-r from-purple-300 to-pink-300 flex justify-center items-center"><img class="p-5 rounded-xl" src="Image/11.png" alt=""></div>
+            <div class="row-span-2 rounded-xl bg-gradient-to-r from-sky-300 to-indigo-300 flex justify-center items-center"><img class="p-5" src="Image/13.png" alt=""></div>
+            <div class="rounded-xl h-36 bg-gradient-to-r from-[#c4b5fd] via-[#a5b4fc]"></div>
+            
+        </div>
+      </section>
+
+       <!-- ours cake end -->
+
+
+        <!-- Review start -->
+        <section class="mt-16 rounded-lg bg-gradient-to-r from-purple-300 to-pink-300">
+          <div class="carousel w-full">
+              <!-- slider 1 start -->
+            <div id="slide1" class="carousel-item relative w-full rounded-lg">
+
+              <div class="hero   min-h-screen">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="Image/451300500_122111558546378917_513493805370148597_n.jpg"
+                    class="max-w-sm h-96 rounded-lg shadow-2xl" />
+
+                  <div class="bg-white p-8 justify-center rounded-lg">
+                    <div class="avatar">
+                      <div class="w-24 rounded-full">
+                        <img src="Image/mustakim vai.jpg" />
+                      </div>
+                    </div>
+                    <p class="py-6">
+                      Yesterday was our Chiku's birthday. <br> For him we ordered a cake from sweet delight. <br> It was so delicious. Thanks to Sweet Delight for this awesome cake.
+                    </p>
+                    
+                  <div class="flex justify-between">
+                      <h1 class="text-2xl font-bold">Mustakim Hawlader</h1>
+
+                  <div class="rating rating-md">
+                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                    <input
+                      type="radio"
+                      name="rating-7"
+                      class="mask mask-star-2 bg-orange-400"
+                       />
+                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7"  class="mask mask-star-2 bg-orange-400" />
+                    <input type="radio" name="rating-7" checked="checked"  class="mask mask-star-2 bg-orange-400" />
+                  </div>
+                </div>
+              </div>
+                </div>
+              </div>
+
+
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slider 1 end -->
+
+            <!-- s;oder 2 starts -->
+
+            <div id="slide2" class="carousel-item relative w-full rounded-lg">
+              
+              <div class="hero  min-h-screen">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="Image/r c.jpeg"
+                    class="max-w-sm h-96 bg-white rounded-lg shadow-2xl" />
+
+                  <div class="bg-white p-8 justify-center rounded-lg">
+                    <div class="avatar">
+                      <div class="w-24 rounded-full">
+                        <img src="Image/rizvi.jpg" />
+                      </div>
+                    </div>
+                    <p class="py-6">
+                      A few days ago was my cousin's birthday. <br> So, I & my other cousins surprise her with this beautiful cake. <br> Thank you so much for making our day.
+                    </p>
+
+                    <div class="flex justify-between">
+                        <h1 class="text-2xl font-bold">Rizvi Khan</h1>
+
+                    <div class="rating rating-md">
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                      <input
+                        type="radio"
+                        name="rating-7"
+                        class="mask mask-star-2 bg-orange-400"
+                         />
+                      <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-7" checked="checked" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-7"  class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                  </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slider 2 end  -->
+
+            <!-- slider 3 start  -->
+            <div id="slide3" class="carousel-item relative w-full rounded-lg">
+              
+
+              <div class="hero   ">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img
+                    src="Image/s c.jpeg"
+                    class="max-w-sm h-96 bg-white rounded-lg shadow-2xl" />
+
+                  <div class="bg-white p-8 justify-center rounded-lg">
+                    <div class="avatar">
+                      <div class="w-24 rounded-full">
+                        <img src="Image/sadiya apu.jpg" />
+                      </div>
+                    </div>
+                    <p class="py-6">
+                      It feels so good when dad comes back home. <br> This level of enjoyment increases when such a <br> beautiful cake is next to it. Thanks you Sweet Delight.
+                    </p>
+
+                              <div class="flex justify-between">
+                                  <h1 class="text-2xl font-bold">Sadiya Salha</h1>
+
+                              <div class="rating rating-md">
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input
+                                  type="radio"
+                                  name="rating-7"
+                                  class="mask mask-star-2 bg-orange-400"
+                                  />
+                                <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7"  class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-7" checked="checked"  class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                            </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+        <!-- slider 3 end   -->
+           
+          </div>
+        </section>
+
+<!-- Review end -->
+ 
+
+      
+
+
+
+       <!-- FAQ START -->
+
+       <section id="faq" class="mt-10">
+            <div class="mt-16 text-center">
+              <h1 class=" text-6xl font-bold">Frequently Asked Questions</h1>
+            </div>
+
+            <div class="hero-content mt-10 gap-24 flex-col lg:flex-row">
+
+              <div>
+                <img class="w-[400px] rounded-lg" src="Image/Questions.gif" alt="">
+              </div>
+    
+              <div>
+                <div class="collapse collapse-arrow mb-2 ">
+                  <input type="radio" name="my-accordion-2" checked="checked" />
+                  <div class="collapse-title text-xl font-medium">How can I order?</div>
+                  <div class="collapse-content">
+                    <p class="text-lg">You can order over our facebook page or in whatsapp.</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow mb-2 ">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium ">How will you deliver the cake to me?</div>
+                  <div class="collapse-content">
+                    <p class="text-lg">We deliver our products by courier.For this your address and some important information will need</p>
+                  </div>
+                </div>
+                <div class="collapse collapse-arrow mb-2 ">
+                  <input type="radio" name="my-accordion-2" />
+                  <div class="collapse-title text-xl font-medium"> Is there an opportunity to bargain?</div>
+                  <div class="collapse-content">
+                    <p class="text-lg">Sorry dear, There is no opportunity to bargain. It's fixed.</p>
+                  </div>
+                </div>
+              </div>
+
+       </section>
+        <!-- FAQ END -->
+   </main>
+
+   <footer id="contact" class="footer footer-center bg-base-300  mt-40 p-10 mx-auto">
+    <aside>
+      
+      <i class="text-3xl font-bold ">Sweet <span class="text-pink-400">Delight</span></i>
+      <p class="font-bold">
+        Providing reliable Bakery since 2021
+      </p>
+      <p>Copyright © 2024 - All right reserved by "Sweet Delight"</p>
+    </aside>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a href="https://www.facebook.com/profile.php?id=61561367527266" target="_blank"><i class="fa-brands fa-facebook text-3xl "></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube text-3xl"></i></a>
+
+        <a href="https://www.instagram.com/salhasadia/" target="_blank"><i class="fa-brands fa-instagram text-3xl"></i></a>
+        
+        
+        
+      </div>
+    </nav>
+  </footer>
+    
+</body>
+</html>
